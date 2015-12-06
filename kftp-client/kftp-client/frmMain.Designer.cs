@@ -28,200 +28,346 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grpKetNoi = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtMayChu = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnSize = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnDownload = new System.Windows.Forms.Button();
+            this.btnUpload = new System.Windows.Forms.Button();
+            this.txtFileName = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtTaiKhoan = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtNewFile = new System.Windows.Forms.TextBox();
+            this.btnRename = new System.Windows.Forms.Button();
+            this.txtOldFile = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnMakeDir = new System.Windows.Forms.Button();
+            this.txtDirname = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnListFile = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtIP = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtPort = new System.Windows.Forms.TextBox();
-            this.btnKetNoi = new System.Windows.Forms.Button();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.tLocal = new System.Windows.Forms.TreeView();
-            this.tRemote = new System.Windows.Forms.TreeView();
-            this.rTxtLog = new System.Windows.Forms.RichTextBox();
-            this.grpKetNoi.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
-            // grpKetNoi
+            // groupBox1
             // 
-            this.grpKetNoi.Controls.Add(this.btnKetNoi);
-            this.grpKetNoi.Controls.Add(this.txtPort);
-            this.grpKetNoi.Controls.Add(this.txtMatKhau);
-            this.grpKetNoi.Controls.Add(this.txtTaiKhoan);
-            this.grpKetNoi.Controls.Add(this.label4);
-            this.grpKetNoi.Controls.Add(this.label3);
-            this.grpKetNoi.Controls.Add(this.label2);
-            this.grpKetNoi.Controls.Add(this.txtMayChu);
-            this.grpKetNoi.Controls.Add(this.label1);
-            this.grpKetNoi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.grpKetNoi.Location = new System.Drawing.Point(0, 0);
-            this.grpKetNoi.Name = "grpKetNoi";
-            this.grpKetNoi.Size = new System.Drawing.Size(816, 53);
-            this.grpKetNoi.TabIndex = 0;
-            this.grpKetNoi.TabStop = false;
-            this.grpKetNoi.Text = "Kết nối";
+            this.groupBox1.Controls.Add(this.btnSize);
+            this.groupBox1.Controls.Add(this.btnDelete);
+            this.groupBox1.Controls.Add(this.btnDownload);
+            this.groupBox1.Controls.Add(this.btnUpload);
+            this.groupBox1.Controls.Add(this.txtFileName);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(678, 83);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Common command";
             // 
-            // label1
+            // btnSize
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Máy chủ:";
+            this.btnSize.Location = new System.Drawing.Point(249, 45);
+            this.btnSize.Name = "btnSize";
+            this.btnSize.Size = new System.Drawing.Size(75, 23);
+            this.btnSize.TabIndex = 2;
+            this.btnSize.Text = "Size";
+            this.btnSize.UseVisualStyleBackColor = true;
             // 
-            // txtMayChu
+            // btnDelete
             // 
-            this.txtMayChu.Location = new System.Drawing.Point(63, 21);
-            this.txtMayChu.Name = "txtMayChu";
-            this.txtMayChu.Size = new System.Drawing.Size(120, 20);
-            this.txtMayChu.TabIndex = 1;
-            this.txtMayChu.Text = "localhost";
+            this.btnDelete.Location = new System.Drawing.Point(168, 45);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnDownload
+            // 
+            this.btnDownload.Location = new System.Drawing.Point(87, 45);
+            this.btnDownload.Name = "btnDownload";
+            this.btnDownload.Size = new System.Drawing.Size(75, 23);
+            this.btnDownload.TabIndex = 2;
+            this.btnDownload.Text = "Download";
+            this.btnDownload.UseVisualStyleBackColor = true;
+            this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
+            // 
+            // btnUpload
+            // 
+            this.btnUpload.Location = new System.Drawing.Point(6, 45);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(75, 23);
+            this.btnUpload.TabIndex = 1;
+            this.btnUpload.Text = "Upload";
+            this.btnUpload.UseVisualStyleBackColor = true;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
+            // 
+            // txtFileName
+            // 
+            this.txtFileName.Location = new System.Drawing.Point(6, 19);
+            this.txtFileName.Name = "txtFileName";
+            this.txtFileName.Size = new System.Drawing.Size(666, 20);
+            this.txtFileName.TabIndex = 0;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.txtNewFile);
+            this.groupBox2.Controls.Add(this.btnRename);
+            this.groupBox2.Controls.Add(this.txtOldFile);
+            this.groupBox2.Location = new System.Drawing.Point(12, 101);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(678, 104);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Rename";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(189, 24);
+            this.label2.Location = new System.Drawing.Point(10, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.Size = new System.Drawing.Size(32, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Tài khoản:";
+            this.label2.Text = "New:";
             // 
-            // txtTaiKhoan
+            // label1
             // 
-            this.txtTaiKhoan.Location = new System.Drawing.Point(253, 21);
-            this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(120, 20);
-            this.txtTaiKhoan.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Old:";
             // 
-            // label3
+            // txtNewFile
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(379, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Mật khẩu:";
+            this.txtNewFile.Location = new System.Drawing.Point(51, 45);
+            this.txtNewFile.Name = "txtNewFile";
+            this.txtNewFile.Size = new System.Drawing.Size(577, 20);
+            this.txtNewFile.TabIndex = 0;
             // 
-            // txtMatKhau
+            // btnRename
             // 
-            this.txtMatKhau.Location = new System.Drawing.Point(440, 21);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(120, 20);
-            this.txtMatKhau.TabIndex = 1;
+            this.btnRename.Location = new System.Drawing.Point(51, 71);
+            this.btnRename.Name = "btnRename";
+            this.btnRename.Size = new System.Drawing.Size(75, 23);
+            this.btnRename.TabIndex = 1;
+            this.btnRename.Text = "Rename";
+            this.btnRename.UseVisualStyleBackColor = true;
+            this.btnRename.Click += new System.EventHandler(this.btnRename_Click);
+            // 
+            // txtOldFile
+            // 
+            this.txtOldFile.Location = new System.Drawing.Point(51, 19);
+            this.txtOldFile.Name = "txtOldFile";
+            this.txtOldFile.Size = new System.Drawing.Size(577, 20);
+            this.txtOldFile.TabIndex = 0;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnMakeDir);
+            this.groupBox3.Controls.Add(this.txtDirname);
+            this.groupBox3.Location = new System.Drawing.Point(12, 211);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(678, 83);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "New dir";
+            // 
+            // btnMakeDir
+            // 
+            this.btnMakeDir.Location = new System.Drawing.Point(6, 45);
+            this.btnMakeDir.Name = "btnMakeDir";
+            this.btnMakeDir.Size = new System.Drawing.Size(75, 23);
+            this.btnMakeDir.TabIndex = 1;
+            this.btnMakeDir.Text = "Make dir";
+            this.btnMakeDir.UseVisualStyleBackColor = true;
+            this.btnMakeDir.Click += new System.EventHandler(this.btnMakeDir_Click);
+            // 
+            // txtDirname
+            // 
+            this.txtDirname.Location = new System.Drawing.Point(6, 19);
+            this.txtDirname.Name = "txtDirname";
+            this.txtDirname.Size = new System.Drawing.Size(666, 20);
+            this.txtDirname.TabIndex = 0;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.btnListFile);
+            this.groupBox4.Controls.Add(this.listBox1);
+            this.groupBox4.Location = new System.Drawing.Point(12, 300);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(678, 179);
+            this.groupBox4.TabIndex = 0;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "List file";
+            // 
+            // btnListFile
+            // 
+            this.btnListFile.Location = new System.Drawing.Point(6, 19);
+            this.btnListFile.Name = "btnListFile";
+            this.btnListFile.Size = new System.Drawing.Size(120, 23);
+            this.btnListFile.TabIndex = 1;
+            this.btnListFile.Text = "List file";
+            this.btnListFile.UseVisualStyleBackColor = true;
+            this.btnListFile.Click += new System.EventHandler(this.btnListFile_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(6, 48);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(666, 121);
+            this.listBox1.TabIndex = 0;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.btnSave);
+            this.groupBox5.Controls.Add(this.txtPassword);
+            this.groupBox5.Controls.Add(this.txtUsername);
+            this.groupBox5.Controls.Add(this.txtIP);
+            this.groupBox5.Controls.Add(this.label5);
+            this.groupBox5.Controls.Add(this.label4);
+            this.groupBox5.Controls.Add(this.label3);
+            this.groupBox5.Location = new System.Drawing.Point(12, 485);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(678, 59);
+            this.groupBox5.TabIndex = 0;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Config";
+            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(352, 30);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 1;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(246, 32);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(100, 20);
+            this.txtPassword.TabIndex = 1;
+            this.txtPassword.Text = "123";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(127, 32);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(100, 20);
+            this.txtUsername.TabIndex = 1;
+            this.txtUsername.Text = "nduy";
+            // 
+            // txtIP
+            // 
+            this.txtIP.Location = new System.Drawing.Point(6, 32);
+            this.txtIP.Name = "txtIP";
+            this.txtIP.Size = new System.Drawing.Size(100, 20);
+            this.txtIP.TabIndex = 1;
+            this.txtIP.Text = "localhost";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(246, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Password";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(566, 24);
+            this.label4.Location = new System.Drawing.Point(127, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Cổng:";
+            this.label4.Text = "Username";
             // 
-            // txtPort
+            // label3
             // 
-            this.txtPort.Location = new System.Drawing.Point(607, 21);
-            this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(57, 20);
-            this.txtPort.TabIndex = 1;
-            this.txtPort.Text = "21";
-            // 
-            // btnKetNoi
-            // 
-            this.btnKetNoi.Location = new System.Drawing.Point(670, 19);
-            this.btnKetNoi.Name = "btnKetNoi";
-            this.btnKetNoi.Size = new System.Drawing.Size(75, 23);
-            this.btnKetNoi.TabIndex = 2;
-            this.btnKetNoi.Text = "Kết nối";
-            this.btnKetNoi.UseVisualStyleBackColor = true;
-            this.btnKetNoi.Click += new System.EventHandler(this.btnKetNoi_Click);
-            // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 53);
-            this.splitContainer1.Name = "splitContainer1";
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this.tLocal);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.tRemote);
-            this.splitContainer1.Size = new System.Drawing.Size(816, 324);
-            this.splitContainer1.SplitterDistance = 425;
-            this.splitContainer1.TabIndex = 1;
-            // 
-            // tLocal
-            // 
-            this.tLocal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tLocal.Location = new System.Drawing.Point(0, 0);
-            this.tLocal.Name = "tLocal";
-            this.tLocal.Size = new System.Drawing.Size(425, 324);
-            this.tLocal.TabIndex = 0;
-            // 
-            // tRemote
-            // 
-            this.tRemote.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tRemote.Location = new System.Drawing.Point(0, 0);
-            this.tRemote.Name = "tRemote";
-            this.tRemote.Size = new System.Drawing.Size(387, 324);
-            this.tRemote.TabIndex = 0;
-            // 
-            // rTxtLog
-            // 
-            this.rTxtLog.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.rTxtLog.Location = new System.Drawing.Point(0, 377);
-            this.rTxtLog.Name = "rTxtLog";
-            this.rTxtLog.Size = new System.Drawing.Size(816, 135);
-            this.rTxtLog.TabIndex = 2;
-            this.rTxtLog.Text = "";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(17, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "IP";
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 512);
-            this.Controls.Add(this.splitContainer1);
-            this.Controls.Add(this.grpKetNoi);
-            this.Controls.Add(this.rTxtLog);
+            this.ClientSize = new System.Drawing.Size(700, 555);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox1);
             this.Name = "frmMain";
             this.Text = "kFTP Client";
-            this.grpKetNoi.ResumeLayout(false);
-            this.grpKetNoi.PerformLayout();
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox grpKetNoi;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txtFileName;
+        private System.Windows.Forms.Button btnSize;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnDownload;
+        private System.Windows.Forms.Button btnUpload;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtMayChu;
-        private System.Windows.Forms.TextBox txtPort;
-        private System.Windows.Forms.TextBox txtMatKhau;
-        private System.Windows.Forms.TextBox txtTaiKhoan;
+        private System.Windows.Forms.TextBox txtNewFile;
+        private System.Windows.Forms.Button btnRename;
+        private System.Windows.Forms.TextBox txtOldFile;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnMakeDir;
+        private System.Windows.Forms.TextBox txtDirname;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button btnListFile;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtIP;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnKetNoi;
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.TreeView tLocal;
-        private System.Windows.Forms.TreeView tRemote;
-        private System.Windows.Forms.RichTextBox rTxtLog;
+        private System.Windows.Forms.Button btnSave;
+
     }
 }
 
